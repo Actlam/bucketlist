@@ -1,6 +1,6 @@
 
 .topbar-responsive {
-    background: #2c3840;
+    background: #471047;
     padding: 1rem 1.5rem;
   }
   
@@ -10,7 +10,7 @@
 }
 
 .topbar-responsive .menu {
-  background: #2c3840;
+  background: #471047;
 }
 
 .topbar-responsive .menu li:last-of-type {
@@ -127,3 +127,44 @@
   }
 }
 
+
+/* 以下bodyタグ内 */
+
+.grobal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grobal-container__introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body, 
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fefefe;
+}
+
+main {
+  flex: 1;
+  background-color: ;
+}
+
+footer {
+  width: 100%;
+  background-color: #471047;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  color: white;
+}

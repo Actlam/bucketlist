@@ -14,38 +14,47 @@
     <title>BucketList</title>
 </head>
 <body>
-    <header>
-        <nav class="top-bar topbar-responsive">
-        <div class="top-bar-title">
-            <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle></button>
-            </span>
-            <a class="topbar-responsive-logo" href="#"><strong>BUCKET LIST</strong></a>
-        </div>
-        <div id="topbar-responsive" class="topbar-responsive-links">
-            <div class="top-bar-right">
-            <ul class="menu simple vertical medium-horizontal">
-                <li><a href="#">Add</a></li>
-                <li><a href="#">Notification</a></li>
-                <li><a href="#">Settings</a></li>
-                <li>
-                <button type="button" class="button hollow topbar-responsive-button">What</button>
-                </li>
-            </ul>
+    <div id="wrapper">
+        <header>
+            <nav class="top-bar topbar-responsive">
+                <div class="top-bar-title">
+                    <img src="./img/bucket-prototype.svg" alt="bucket-icon" width="48px" height="24px">
+                    <a class="topbar-responsive-logo" href="#"><strong>BUCKET LIST</strong></a>
+                </div>
+                <div id="topbar-responsive" class="topbar-responsive-links">
+                    <div class="top-bar-right">
+                        <ul class="menu simple vertical medium-horizontal">
+                            <li><a href="#">Add</a></li>
+                            <li><a href="#">Notification</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li>
+                                <button type="button" class="button hollow topbar-responsive-button">What</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="grobal-container">
+                <img class="grobal-container__img" src="./img/bucket-prototype-title.svg" alt="bucket" width="200px" height="200px">
+                <div class="grobal-container__introduction">
+                    <p>BUCKET LISTは、あなたが人生でやっておきたいことをリストにできるサービスです。</p>
+                    <p>あなただけの棺桶リストを作ってみませんか?</p>
+                </div>
+                <div class="grobal-container__button">
+                    <!-- <button type="buttun" text="リストを作ってみる">リスト</button> -->
+                    <button class="hollow button secondary" href="#">つくってみる</button>
+                </div>
             </div>
-        </div>
-        </nav>
-    </header>
-    
-    <main>
-        <img src="./img/bucket.jpg" alt="bucket">
-        <p>BUCKET LISTは、あなたが人生でやっておきたいことをリストにできるサービスです。</p>
-        <p>あなただけの棺桶リストを作ってみませんか?</p>
-        <button type="buttun" text="リストを作ってみる">リスト</button>
-    </main>
-
-    <footer>
-        <p><small>© Copyright 2020 actlam</small></p>
-    </footer>
+        </main>
+        
+        <footer>
+            <div class="footer-container">
+                <p><small>© Copyright 2020 actlam</small></p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
