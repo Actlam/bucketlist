@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
+    
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA==" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/stylesheet.css">
     <title>BucketList</title>
 </head>
 <body>
     <header>
-        <h1>BUCKET LIST</h1>
-        <nav>
-            <span>add</span>
-            <span>notification</span>
-            <span>settings</span>
+        <nav class="top-bar topbar-responsive">
+        <div class="top-bar-title">
+            <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            </span>
+            <a class="topbar-responsive-logo" href="#"><strong>BUCKET LIST</strong></a>
+        </div>
+        <div id="topbar-responsive" class="topbar-responsive-links">
+            <div class="top-bar-right">
+            <ul class="menu simple vertical medium-horizontal">
+                <li><a href="#">Add</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="#">Settings</a></li>
+                <li>
+                <button type="button" class="button hollow topbar-responsive-button">What</button>
+                </li>
+            </ul>
+            </div>
+        </div>
         </nav>
     </header>
     
     <main>
+        <img src="./img/bucket.jpg" alt="bucket">
         <p>BUCKET LISTは、あなたが人生でやっておきたいことをリストにできるサービスです。</p>
         <p>あなただけの棺桶リストを作ってみませんか?</p>
         <button type="buttun" text="リストを作ってみる">リスト</button>
