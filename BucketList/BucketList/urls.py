@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url, include
+from lists.urls import router as blog_router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('lists.urls')),
+    url(r'^admin/', admin.site.urls),
+    # blog.urlsをincludeする
+    url(r'^api/', include(blog_router.urls)),
 ]
+
